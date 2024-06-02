@@ -1,0 +1,163 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Background image */
+#fondo {
+    position: fixed;
+    background: url('https://www.shutterstock.com/image-vector/air-jordan-sport-logo-icon-600nw-2270700541.jpg');
+    top: 172px;
+    left: 28em;
+    width: 544px;
+    height: 493px;
+    z-index: -10;
+    opacity: 0.5;
+}
+
+/* Flexbox for header and nav */
+header {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 1em;
+    margin: 0 1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Grid layout for the main content */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+h2 {
+    grid-column: span 1;
+    text-align: center;
+}
+
+section {
+    background: #f4f4f4;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+#jordanChicago {
+    display: block;
+    margin: 0 auto 1rem;
+    float: right;
+    border: 4px solid black;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#compra {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#compra:hover {
+    background: #555;
+}
+
+/* Flexbox for footer */
+footer {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    border: 5px solid black;
+    background-color: gray;
+}
+
+td {
+    border: 2px solid black;
+    text-align: center;
+}
+
+/* Additional image styling */
+#jordanDior, #jordanOff-White {
+    float: right;
+    border: 4px solid black;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Styling for specific IDs */
+#precio {
+    float: right;
+}
+
+#Tproducto, #Tregistro {
+    border: 1px;
+    border-color: black;
+}
+
+#Lcontacto {
+    float: right;
+}
+
+#mapa {
+    float: left;
+}
